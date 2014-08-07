@@ -1,0 +1,13 @@
+<apex:page standardController="Bid__c" extensions="timeUpdate">
+<apex:include pageName="Pop_up_window"/>
+<apex:form >
+<apex:actionRegion >
+       <apex:outputPanel id="detailsection">
+           <apex:detail relatedList="false" subject="{!Bid__c}" />
+       </apex:outputPanel>
+     <!--  <apex:outputText id="time" value="{!now()}"/> -->
+       <apex:outputField label="Time remaining for Bid closure" value="{!Bid__c.Time_remaining_for_Bid_closure__c}" id="counter"/>
+       <apex:actionPoller reRender="detailsection,counter" interval="60"/>
+</apex:actionRegion>       
+</apex:form>       
+</apex:page>

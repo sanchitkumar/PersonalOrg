@@ -1,0 +1,22 @@
+<apex:page controller="LoginPages" showHeader="false" sidebar="false" standardStylesheets="true" id="thePage">
+<script>
+function CheckPassword()   
+{   
+alert('hello1');
+var password = '/^[A-Za-z]\\w{7,14}$/';
+var p=document.getElementById("thePage:frm:password").value;
+}
+</script>
+<apex:Pagemessages id="msg"/>
+<apex:form id="frm">
+
+<p><b>UserName</b><br />
+<apex:inputText id="username" value="{!username}"/>
+</p>
+<p><b>Password</b><br />
+<apex:inputSecret id="password" value="{!password}"/>
+</p>
+  <apex:commandButton action="{!validatePass}" onclick="CheckPassword()" value="Login" id="save">
+  </apex:commandbutton>
+</apex:form>
+</apex:page>

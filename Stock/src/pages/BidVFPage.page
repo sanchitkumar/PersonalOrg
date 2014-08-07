@@ -1,0 +1,19 @@
+<apex:page standardController="Bid__c" extensions="orderExtension">
+<apex:sectionHeader title="Bid Edit" subtitle="New Bid"/>
+<apex:form >
+    <apex:pageBlock title="Bid Edit" >
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Save" action="{!save}"/>
+            <apex:commandButton value="Cancel" action="{!cancel}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Order Information" columns="2">
+            <apex:inputField label="Contact" value="{!Bid__c.Contact__c}"/>
+            <apex:inputField label="Bid Amount" value="{!Bid__c.Bid_Amount__c}"/>
+            <apex:inputField label="Bid Type" value="{!Bid__c.Bid_Type__c}"/>
+            <apex:inputField label="Maximum Bid" value="{!Bid__c.Maximum_Bid__c}"/>
+            <apex:inputField label="Innvoice" value="{!Bid__c.Innvoice__c}"/>
+            <apex:inputField label="Status" value="{!Bid__c.Status__c}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

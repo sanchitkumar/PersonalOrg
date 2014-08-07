@@ -1,0 +1,8 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page
+  <img id="theImage" src="https://c.ap1.content.force.com/servlet/servlet.FileDownload?file=015900000030Tk2" 
+width="500" height="100"/>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

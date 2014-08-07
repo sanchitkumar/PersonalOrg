@@ -1,0 +1,7 @@
+<apex:page standardcontroller="Bid__c" sidebar="false" showHeader="false" showChat="false">
+    <apex:outputPanel rendered="{!Bid__c.Status__c == 'Ready For Approval'}">
+  <script>
+    alert('Click on SUBMIT FOR APPROVAL button to get your bid approved by manager');  
+  </script>
+  </apex:outputPanel>
+</apex:page>
